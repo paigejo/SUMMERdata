@@ -1,2 +1,2 @@
 # SUMMERdata
-Downloadable datasets for the SUMMER package
+Downloadable datasets for the SUMMER R package
