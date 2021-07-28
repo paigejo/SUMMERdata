@@ -1,8 +1,8 @@
 require(rgdal)
 # Shapefiles obtained from https://gadm.org/download_country_v3.html
-adm0 = readOGR(dsn = "~/git/SUMMERdata/gadm36_KEN_shp", layer = "gadm36_KEN_0")
-adm1 = readOGR(dsn = "~/git/SUMMERdata/gadm36_KEN_shp", layer = "gadm36_KEN_1")
-adm2 = readOGR(dsn = "~/git/SUMMERdata/gadm36_KEN_shp", layer = "gadm36_KEN_2")
+adm0 = readOGR(dsn = "~/git/SUMMERdata/data/gadm36_KEN_shp", layer = "gadm36_KEN_0")
+adm1 = readOGR(dsn = "~/git/SUMMERdata/data/gadm36_KEN_shp", layer = "gadm36_KEN_1")
+adm2 = readOGR(dsn = "~/git/SUMMERdata/data/gadm36_KEN_shp", layer = "gadm36_KEN_2")
 kenyaPoly = adm0@polygons[[1]]@Polygons[[77]]@coords
 
 # cluster locations from the 2014 Kenya Demographic Health Survey (KDHS).
